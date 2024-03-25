@@ -1,4 +1,13 @@
 <script setup lang="ts">
+defineProps({
+  colors: {
+    type: Array,
+    default: () => {
+      console.log(this)
+      return ['#f00', '#ccff00', '#eee', '#0f0']
+    }
+  }
+})
 const text = 'd'
 </script>
 <template>
